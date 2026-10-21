@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Revisão de canais do HC</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg: #FAFAFA; --fg: #141414; --muted: #6F6F6F; --brand: #BE0380; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font-family: "DM Sans", Helvetica, Arial, sans-serif; }
+  main { max-width: 1240px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 28px; margin: 0 0 6px; }
+  .lead { color: var(--muted); margin: 0 0 32px; }
+  figure { margin: 0 0 40px; }
+  h2 { font-size: 19px; margin: 0 0 4px; color: var(--brand); }
+  figcaption { color: var(--muted); margin: 0 0 12px; }
+  img { width: 100%; height: auto; display: block; border-radius: 12px; border: 1px solid #E2D7E0; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Revisão de canais do Health Companion</h1>
+  <p class="lead">Como ler os números da revisão: os grãos, o ciclo de vida de uma revisão, o destino de cada mensagem e quando o dado chega.</p>
+  <figure>
+    <h2>1. Três grãos: canal, ciclo e mensagem</h2>
+    <figcaption>O canal contém ciclos de revisão, e cada ciclo contém as respostas da IA. Cada indicador vive em um desses grãos.</figcaption>
+    <img src="img/1-graos.png" alt="O canal contém ciclos de revisão, e cada ciclo contém mensagens da IA; ao lado, os indicadores de cada grão.">
+  </figure>
+  <figure>
+    <h2>2. O ciclo de vida de uma revisão</h2>
+    <figcaption>Quem abre o atendimento fica com ele até encerrar; o SLA corre da entrada ao encerramento.</figcaption>
+    <img src="img/2-ciclo-de-vida.png" alt="Estados do ciclo: entra na fila, aberto, encerrado; ramos de quem não conclui, entrada no chat e redirecionamento; relógio do SLA.">
+  </figure>
+  <figure>
+    <h2>3. O que acontece com cada mensagem</h2>
+    <figcaption>Pulada não é Conforme: é a mensagem que ficou sem avaliação quando o revisor encerrou depois de registrar um achado.</figcaption>
+    <img src="img/3-mensagens.png" alt="Caminhos do revisor: Não encontrei erros, classificar uma mensagem, redirecionar, ou ainda em aberto; e os pilares do formulário.">
+  </figure>
+  <figure>
+    <h2>4. Quando o dado chega</h2>
+    <figcaption>A carga é diária por dia UTC: o que acontece depois das 21h de Brasília só aparece na carga do dia seguinte.</figcaption>
+    <img src="img/4-carga.png" alt="Linha do tempo das cargas diárias com corte às 21h de Brasília.">
+  </figure>
+</main>
+</body>
+</html>
